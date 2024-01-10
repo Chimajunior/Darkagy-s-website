@@ -1,0 +1,106 @@
+body{
+    background-color: black;
+    
+}
+.logo{
+    width: 220px;
+    height: 80px;
+    margin-left: 40px;
+    position: fixed;
+    /* top: 0; */
+}
+.Container{
+    display: flex;
+    justify-content: center;
+    /* border: 2px dotted red; */
+    height: 100%;
+    width: 100%;
+}
+p{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+}
+span:hover{
+    text-decoration: underline;
+}
+
+.imgBox{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 50px;
+    justify-content: center;
+    width: 70%;
+    /* border: 2px solid red; */
+    margin-bottom: 100px;
+
+}
+.card{
+    /* border: 2px solid purple; */
+    /* height: 300px; */
+    padding: 10px;
+}
+/* Swiper container stylng */
+.swiper {
+    width: 50%;
+    height: 300px;
+
+ } 
+.swiper-slide {
+    text-align: center;
+      /* Center: slide text vertically  */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    
+ } 
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ 
+ 
+ .slide_1 {
+    background-color:#643ca3 ;
+    border: none;
+    outline: none;
+ }
+ 
+ 
+ .slide_2 {
+    /* background-color:#e38364 ; */
+ }
+ footer{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+ 
