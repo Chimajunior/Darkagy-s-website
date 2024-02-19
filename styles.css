@@ -3,9 +3,20 @@ body {
 }
 .logo {
   width: 220px;
-  height: 80px;
+  height: 100px;
   margin-left: 40px;
+}
+header {
   position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: black;
+  display: flex;
+  column-gap: 1000px;
+  width: 100%;
+}
+header .socials {
+  align-items: center;
 }
 .Container {
   display: flex;
@@ -13,12 +24,17 @@ body {
   height: 100%;
   width: 100%;
 }
-p {
-  margin-top: 50px;
+span {
   color: white;
   text-align: center;
 }
-span:hover {
+.imgBox p {
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+}
+
+.imgBox span:hover {
   text-decoration: underline;
 }
 
@@ -29,7 +45,6 @@ span:hover {
   gap: 50px;
   justify-content: center;
   width: 70%;
-  /* border: 2px solid red; */
   margin-bottom: 100px;
 }
 .card {
@@ -61,21 +76,15 @@ span:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin-bottom: 20px;
 }
 
-.slide_1 {
-  background-color: #643ca3;
-  border: none;
-  outline: none;
-}
-
-.slide_2 {
-  /* background-color:#e38364 ; */
-}
 footer {
   display: flex;
-  gap: 15px;
+  flex-direction: column;
+  gap: 20px;
   justify-content: center;
+  align-items: center;
   margin-bottom: 50px;
 }
 a {
@@ -85,4 +94,54 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+.swiper-pagination > .swiper-pagination-bullet {
+  opacity: 1;
+  border: white solid 1px;
+  background-color: transparent;
+}
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background-color: white;
+}
+.icons {
+  /* color: green; */
+  font-size: 30px;
+  cursor: pointer;
+}
+.socials {
+  display: flex;
+  gap: 30px;
+  
+}
+#fcon a {
+  margin-left: 10px;
+}
+
+/* Responsiveness */
+@media only screen and (min-width: 300px) and (max-width: 860px) {
+  .imgBox {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 861px) and (max-width: 1000px) {
+  .imgBox {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    width: 70%;
+    margin-bottom: 100px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
