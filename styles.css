@@ -12,11 +12,13 @@ header {
   z-index: 999;
   background-color: black;
   display: flex;
-  column-gap: 1000px;
+  /* column-gap: 1000px; */
+
   width: 100%;
 }
 header .socials {
   align-items: center;
+  margin-left: 70%;
 }
 .Container {
   display: flex;
@@ -34,9 +36,9 @@ span {
   text-align: center;
 }
 
-.imgBox span:hover {
+/* .imgBox span:hover {
   text-decoration: underline;
-}
+} */
 
 .imgBox {
   margin-top: 150px;
@@ -92,9 +94,9 @@ a {
   text-decoration: none;
   font-size: 15px;
 }
-a:hover {
+/* a:hover {
   text-decoration: underline;
-}
+} */
 .swiper-pagination > .swiper-pagination-bullet {
   opacity: 1;
   border: white solid 1px;
@@ -111,7 +113,6 @@ a:hover {
 .socials {
   display: flex;
   gap: 30px;
-  
 }
 #fcon a {
   margin-left: 10px;
@@ -119,6 +120,15 @@ a:hover {
 
 /* Responsiveness */
 @media only screen and (min-width: 300px) and (max-width: 860px) {
+  header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: black;
+    display: flex;
+    column-gap: 200px;
+    width: 100%;
+  }
   .imgBox {
     display: grid;
     grid-template-columns: 1fr;
