@@ -14,6 +14,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <style>
       body {
         font-family: "Poppins", sans-serif;
@@ -23,15 +27,39 @@
   <body>
     <header>
       <img class="logo" src="/img/darks2.jpg" draggable="false" alt="" />
+
+      <div class="drop-down">
+        <div class="wrapper">
+          <img src="img/nigerianFlag.webp" class="selectedImg" />
+          <div class="selected">NGN</div>
+        </div>
+        <i class="ri-arrow-drop-down-fill arrow"></i>
+
+        <div class="list">
+          <div class="item" data-currency="USD">
+            <img src="img/usFlag.webp" alt="" />
+            <div class="text">USD</div>
+          </div>
+          <div class="item" data-currency="NGN">
+            <img src="img/nigerianFlag.webp" alt="" />
+            <div class="text">NGN</div>
+          </div>
+        </div>
+      </div>
+
       <div class="socials">
-        <a href="https://wa.me/message/F72XCXNUSWJUF1" target="_blank"  rel="noreferrer"
-        ><ion-icon class="icons" name="logo-whatsapp"></ion-icon
-      ></a>
+        <a
+          href="https://wa.me/message/F72XCXNUSWJUF1"
+          target="_blank"
+          rel="noreferrer"
+          ><ion-icon class="icons" name="logo-whatsapp"></ion-icon
+        ></a>
         <a href="mailto:darkagys@gmail.com"
           ><ion-icon class="icons" name="mail"></ion-icon
         ></a>
       </div>
     </header>
+
     <div class="Container">
       <div class="imgBox">
         <div class="card">
@@ -47,7 +75,12 @@
           <div class="cardText">
             <p>
               <span>PURPLE CAMO GENES</span> <br />
-              ₦150,000.
+              <span
+                class="price"
+                data-price-ngn="250000"
+                data-price-usd="179.25"
+                >₦250,000</span
+              >
             </p>
           </div>
           <!-- card text -->
@@ -67,7 +100,12 @@
           <div class="cardText">
             <p>
               <span>PINK CAMO GENES</span> <br />
-              ₦150,000.
+              <span
+                class="price"
+                data-price-ngn="250000"
+                data-price-usd="179.25"
+                >₦250,000</span
+              >
             </p>
           </div>
           <!-- card text -->
@@ -87,7 +125,12 @@
           <div class="cardText">
             <p>
               <span>GREEN CAMO GENES</span> <br />
-              ₦150,000.
+              <span
+                class="price"
+                data-price-ngn="250000"
+                data-price-usd="179.25"
+                >₦250,000</span
+              >
             </p>
           </div>
           <!-- card text -->
@@ -107,7 +150,12 @@
           <div class="cardText">
             <p>
               <span>RED CAMO GENES</span> <br />
-              ₦150,000.
+              <span
+                class="price"
+                data-price-ngn="250000"
+                data-price-usd="179.25"
+                >₦250,000</span
+              >
             </p>
           </div>
           <!-- card text -->
@@ -127,7 +175,12 @@
           <div class="cardText">
             <p>
               <span>BROWN CAMO GENES</span> <br />
-              ₦150,000.
+              <span
+                class="price"
+                data-price-ngn="250000"
+                data-price-usd="179.25"
+                >₦250,000</span
+              >
             </p>
           </div>
           <!-- card text -->
@@ -147,7 +200,12 @@
           <div class="cardText">
             <p>
               <span>YELLOW CAMO GENES</span> <br />
-              ₦150,000.
+              <span
+                class="price"
+                data-price-ngn="250000"
+                data-price-usd="179.25"
+                >₦250,000</span
+              >
             </p>
           </div>
           <!-- card text -->
@@ -163,21 +221,52 @@
               <div class="swiper-slide slide_2">
                 <img src="img/vest-back2.jpeg" draggable="true" alt="" />
               </div>
-
             </div>
             <div class="swiper-pagination"></div>
           </div>
 
-          <div class="cardText">
+          <div class="cardText swip">
             <p>
               <span>VEST-BACKPACK</span> <br />
-              ₦250,000.
+              <span
+                class="price"
+                data-price-ngn="250000"
+                data-price-usd="179.25"
+                >₦250,000</span
+              >
             </p>
           </div>
           <!-- card text -->
         </div>
         <!-- closing card -->
 
+        <div class="card">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide_1">
+                <img src="img/vest-back3.jpg" draggable="true" alt="" />
+              </div>
+              <div class="swiper-slide slide_2">
+                <img src="img/vest-back4.jpg" draggable="true" alt="" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="cardText swip">
+            <p>
+              <span>VEST-BACKPACK</span> <br />
+              <span
+                class="price"
+                data-price-ngn="250000"
+                data-price-usd="179.25"
+                >₦250,000</span
+              >
+            </p>
+          </div>
+          <!-- card text -->
+        </div>
+        <!-- closing card -->
       </div>
       <!-- closing imgBox -->
     </div>
@@ -186,13 +275,13 @@
     <footer>
       <div id="fcon">
         <span>ONLY TRANSFER TRANSACTIONS ACCEPTED</span>
-
-        <!-- <a href="">HELP</a>
-        <a href="">PRIVACY</a> -->
       </div>
 
       <div class="socials">
-        <a href="https://wa.me/message/F72XCXNUSWJUF1" target="_blank"  rel="noreferrer"
+        <a
+          href="https://wa.me/message/F72XCXNUSWJUF1"
+          target="_blank"
+          rel="noreferrer"
           ><ion-icon class="icons" name="logo-whatsapp"></ion-icon
         ></a>
         <a href="mailto:darkagys@gmail.com"
@@ -202,6 +291,7 @@
     </footer>
   </body>
 
+  <script src="script.js"></script>
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script>
@@ -216,4 +306,3 @@
 
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </html>
-
