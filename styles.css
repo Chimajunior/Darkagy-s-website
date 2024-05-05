@@ -12,13 +12,12 @@ header {
   z-index: 999;
   background-color: black;
   display: flex;
-  /* column-gap: 1000px; */
-
+  justify-content: space-between;
   width: 100%;
 }
 header .socials {
   align-items: center;
-  margin-left: 70%;
+  margin-right: 40px;
 }
 .Container {
   display: flex;
@@ -88,15 +87,14 @@ footer {
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+  text-align: center;
 }
 a {
   color: white;
   text-decoration: none;
   font-size: 15px;
 }
-/* a:hover {
-  text-decoration: underline;
-} */
+
 .swiper-pagination > .swiper-pagination-bullet {
   opacity: 1;
   border: white solid 1px;
@@ -118,6 +116,68 @@ a {
   margin-left: 10px;
 }
 
+
+/* dropdown styles */
+
+.drop-down{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #fff; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.322);
+  width: 150px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  /* margin-left: 25%; */
+}
+
+.arrow{
+  font-size: 30px;
+  color: white;
+}
+
+.wrapper{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: #ccc;
+
+}
+img{
+  height: 30px;
+  
+}
+.list{
+  background-color: #ccc;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.322);
+  cursor: pointer;
+  max-height: 250px;
+  overflow-y: scroll;
+  width: 100%;
+  display: none;
+}
+.show{
+  display: block;
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 0.5rem; 
+}
+
+.item:hover{
+  background-color: rgb(211, 211, 211);
+}
+
+
 /* Responsiveness */
 @media only screen and (min-width: 300px) and (max-width: 860px) {
   header {
@@ -126,13 +186,45 @@ a {
     z-index: 999;
     background-color: black;
     display: flex;
-    column-gap: 200px;
+    column-gap: 20px;
     width: 100%;
   }
+  .logo {
+    width: 200px;
+    height: 100px;
+    margin-left: 0;
+  }
+
+  header .socials {
+    display: none;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
   .imgBox {
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  .swiper {
+    width: 250px;
+    height: 300px;
+  }
+
+  .card {
+    padding: 0;
+  }
+  #fcon {
+    margin-bottom: 10px;
+  }
+
+
 }
 @media only screen and (min-width: 861px) and (max-width: 1000px) {
   .imgBox {
